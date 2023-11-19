@@ -3,6 +3,11 @@
 This project focuses on predicting customer churn within a banking dataset. Customer churn, also known as customer attrition, refers to the phenomenon where customers stop doing business with a company. The dataset used here contains various attributes and features related to bank customers, aiming to predict whether a customer is likely to leave the bank.
 
 ## Directory Structure
+
+- **Notebooks:** This folder contains Jupyter notebooks used for data exploration, model training, and result evaluation. Each regression model has a dedicated notebook for analysis and implementation.
+
+- **Repository:** The `dataset` folder contains the CSV file with the necessary data for training and testing the regression models.
+
 ## About this file - Attribute Information
 
 | Attribute | Description |
@@ -25,38 +30,58 @@ This project focuses on predicting customer churn within a banking dataset. Cust
 | poutcome | Categorical - Outcome of the previous marketing campaign (e.g., failure, nonexistent, success) |
 | target | Binary - Has the client subscribed a term deposit? (yes, no) |
 
-### /tests
+## Applied Models
 
-Includes test scripts, unit tests, or any other testing-related files.
+- **Grandient Boosting**
+- **XGB Boosting**
 
-## Features
+## XGBoost and Gradient Boosting
 
-Describe the main features or functionalities of the project. This could include specific functions, tools, or unique aspects.
+### XGBoost (Extreme Gradient Boosting)
 
-## Usage
+XGBoost is an optimized and scalable implementation of gradient boosting. It stands for Extreme Gradient Boosting and is based on the gradient boosting framework, designed for speed and performance. It's widely used in machine learning competitions and data science projects due to its efficiency and accuracy.
 
-Provide instructions or a guide on how to use or run the project. Include setup instructions, dependencies, and any specific configurations needed.
+#### Key Features of XGBoost:
+- **Regularization**: Helps in preventing overfitting by penalizing complex models.
+- **Parallelization**: Utilizes parallel computing to enhance training speed.
+- **Tree Pruning**: Prunes trees that do not contribute significantly to the model, improving efficiency.
+- **Built-in Cross-Validation**: Facilitates model tuning by incorporating cross-validation.
 
-## Contributors
+### Gradient Boosting
 
-List the contributors to the project, their roles, and contributions.
+Gradient boosting is a machine learning technique used for both regression and classification tasks. It works by combining multiple weak predictive models (typically decision trees) to create a strong model. Each new model attempts to correct errors made by the previous one. It's an ensemble technique that builds models sequentially.
 
-## License
+#### Key Features of Gradient Boosting:
+- **Sequential Learning**: Models are built sequentially, with each new model correcting the errors of its predecessor.
+- **Ensemble Method**: Combines multiple weak models to create a robust and accurate model.
+- **Gradient Descent**: Optimizes a loss function by moving in the direction of the negative gradient of the loss.
 
-Specify the project's license, if any, under which it is distributed.
+### Advantages in Data Analysis:
 
-## Issues or Future Improvements
+Both XGBoost and Gradient Boosting provide several advantages in data analysis:
+- **High Predictive Accuracy**: Both methods produce highly accurate predictions.
+- **Handle Complex Relationships**: They can capture complex relationships between features and the target variable.
+- **Robust to Overfitting**: Incorporating regularization techniques helps prevent overfitting.
+- **Feature Importance**: Provide insights into feature importance, aiding in feature selection and understanding the dataset.
 
-Mention any known issues, bugs, or areas for potential future improvement or development.
+In summary, XGBoost and Gradient Boosting are powerful algorithms known for their predictive accuracy and capability to handle complex datasets, making them valuable tools in the field of machine learning and data analysis.
 
-## Acknowledgments
+## How to Use
 
-Express gratitude or recognition to any individuals, organizations, or resources that significantly contributed to the project's success.
+1. Clone this repository to your local environment.
+2. The notebooks can be executed in a platform that supports Python and Jupyter Notebooks.
+3. Follow the instructions in the notebooks to load the data, train the models, and evaluate the results.
 
-## Conclusion
 
-Summarize the project's impact, results achieved, or any conclusions drawn from the work done.
+## Getting Started
 
-## Contact Information
+To get started with this project, clone the repository and navigate to the respective directories to access the Jupyter notebooks and the dataset:
 
-Provide contact details or links to reach out to the project maintainers or contributors for inquiries or collaboration.
+```bash
+git clone https://github.com/julioclerio/xgb-boosting_gradiente-boosting
+
+# Run the Jupyter notebooks
+cd ml-svm/notebooks
+
+# Access the dataset for your analyses
+repository/bank-full.csv
