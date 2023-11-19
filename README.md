@@ -81,7 +81,7 @@ To get started with this project, clone the repository and navigate to the respe
 git clone https://github.com/julioclerio/xgb-boosting_gradiente-boosting
 
 # Run the Jupyter notebooks
-cd ml-svm/notebooks
+cd xgb-boosting_gradiente-boosting/notebooks
 
 # Access the dataset for your analyses
 repository/bank-full.csv
